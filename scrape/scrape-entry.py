@@ -60,6 +60,7 @@ if len(items_1) != 6:
     for item in complete_fields:
         if item not in items_1_fields:
             items_1.append("<dt> {} </dt>".format(item))
+            # Add URL
             descriptions_1.append("<dd> N/A </dd>")
 
 for i in range(len(items_1)):

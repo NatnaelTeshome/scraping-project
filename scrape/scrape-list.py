@@ -1,42 +1,22 @@
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
-# import requests
+import os
 
 
-import requests
+# Instantiate options
+opts = Options()
+opts.headless = True
 
-url = "https://www.lulu.com/search?page=2&q=jews&pageSize=10&adult_audience_rating=00"
+# Set the location of the webdriver
+chrome_driver = os.getcwd() + "chromedriver"
 
-headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'}   
+# Instantiate a webdriver
+driver = webdriver.Chrome(options=opts, executable_path=chrome_driver)
 
+# Load the HTML page
+driver.get("https://www.lulu.com/search?page=1&q=jews&pageSize=10&adult_audience_rating=00")
 
-response = requests.get(url, headers = headers)
-html = response.text
-
-soup = BeautifulSoup(html, "html.parser")
-
+# Parse processed webpage with BeautifulSoup
+soup = BeautifulSoup(driver.page_source)
 print(soup.prettify())
-
-
-# html = requests.get(url, headers=headers).text
-# print(html)
-
-# soup = BeautifulSoup(html, "html.parser")
-
-# print(soup.prettify())
-
-# body = soup.find("body")
-# div_1 = body.find("div")
-# div_2 = div_1.find("div")
-# main = div_2.find("main")
-# print(main)
-# div_3 = main.find("div")
-#print(div_3)
-#div_4 = div_3.find("div")
-#print(div_4)
-# div_5 = div_4.find_all("div")[1]
-
-
-#print(div_5)
-
-# for result in results:
-#     print(result)
