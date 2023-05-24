@@ -61,7 +61,7 @@ if len(items_1) != 6:
         if item not in items_1_fields:
             items_1.append("<dt> {} </dt>".format(item))
             # Add URL
-            descriptions_1.append("<dd> N/A </dd>")
+            descriptions_details.append("<dd> N/A </dd>")
 
 for i in range(len(items_1)):
     item = items_1[i].text

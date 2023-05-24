@@ -1,0 +1,390 @@
+<div class="col-7 col-l-9 col-start-l-1 col-start-2">
+ <div class="grid-12 ProductItem_productItem____ATu">
+  <div class="col-4 col-l-6 col-m-4">
+   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/elkan-nathan-adler/jews-in-many-lands/ebook/product-1z449y4p.html?q=jews">
+    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
+     <img alt="Jews In Many Lands" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/z/1z449y4p-ebook-shortedge-384.jpg"/>
+    </div>
+   </div>
+  </div>
+  <div class="col-8 col-l-6 col-m-8">
+   <h3>
+    <a data-testid="product-title" href="/shop/elkan-nathan-adler/jews-in-many-lands/ebook/product-1z449y4p.html?q=jews">
+     Jews In Many Lands
+    </a>
+   </h3>
+   <p class="ProductContributors_author__odis_">
+    By
+    <a data-testid="product-author" href="/search?contributor=Elkan+Nathan+Adler">
+     Elkan Nathan Adler
+    </a>
+   </p>
+   <p class="ProductItem_productItem__published__MssvR">
+    Published Aug 24, 2015
+   </p>
+   <div class="ProductItem_productItem__price__2cI_V">
+    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
+     <i aria-label="formats-ebook" class="icon-formats-ebook" role="img">
+     </i>
+     Ebook
+    </p>
+    <span data-testid="product-price">
+     1.99 USD
+    </span>
+   </div>
+  </div>
+ </div>
+ <div class="grid-12 ProductItem_productItem____ATu">
+  <div class="col-4 col-l-6 col-m-4">
+   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/ella-romm/jews-of-kishinev-and-vicinity/ebook/product-1dzgv6e8.html?q=jews">
+    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
+     <img alt="Jews of Kishinev and Vicinity" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/d/1dzgv6e8-ebook-shortedge-384.jpg"/>
+    </div>
+   </div>
+  </div>
+  <div class="col-8 col-l-6 col-m-8">
+   <h3>
+    <a data-testid="product-title" href="/shop/ella-romm/jews-of-kishinev-and-vicinity/ebook/product-1dzgv6e8.html?q=jews">
+     Jews of Kishinev and Vicinity
+    </a>
+   </h3>
+   <p class="ProductContributors_author__odis_">
+    By
+    <a data-testid="product-author" href="/search?contributor=Ella+Romm">
+     Ella Romm
+    </a>
+   </p>
+   <div class="ProductItem_productItem__rating__8v_Xa">
+    <div class="StarRating-module_starRating__JfjDb">
+     <div class="StarRating-module_starsDisabled__fYwnQ StarRating-module_stars__zOzWm">
+      <i aria-label="Choose 1 stars" class="icon-shop-rating-filled-medium StarRating-module_checked__WgLKY" role="button">
+      </i>
+      <i aria-label="Choose 2 stars" class="icon-shop-rating-filled-medium StarRating-module_checked__WgLKY" role="button">
+      </i>
+      <i aria-label="Choose 3 stars" class="icon-shop-rating-filled-medium StarRating-module_checked__WgLKY" role="button">
+      </i>
+      <i aria-label="Choose 4 stars" class="icon-shop-rating-filled-medium StarRating-module_checked__WgLKY" role="button">
+      </i>
+      <i aria-label="Choose 5 stars" class="icon-shop-rating-filled-medium StarRating-module_checked__WgLKY" role="button">
+      </i>
+     </div>
+    </div>
+    <span class="ProductItem_productItem__rating__count__0V7io">
+     1 rating
+    </span>
+   </div>
+   <p class="ProductItem_productItem__published__MssvR">
+    Published Nov 12, 2017
+   </p>
+   <div class="ProductItem_productItem__price__2cI_V">
+    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
+     <i aria-label="formats-ebook" class="icon-formats-ebook" role="img">
+     </i>
+     Ebook
+    </p>
+    <span data-testid="product-price">
+     10.00 USD
+    </span>
+   </div>
+  </div>
+ </div>
+ <div class="grid-12 ProductItem_productItem____ATu">
+  <div class="col-4 col-l-6 col-m-4">
+   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/dan-blackwelder/jews-gentiles-and-christianity/hardcover/product-1v99rz5z.html?q=jews">
+    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__printedBook__7nUrI ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
+     <img alt="Jews, Gentiles, and Christianity" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/v/1v99rz5z-front-shortedge-384.jpg"/>
+    </div>
+   </div>
+  </div>
+  <div class="col-8 col-l-6 col-m-8">
+   <h3>
+    <a data-testid="product-title" href="/shop/dan-blackwelder/jews-gentiles-and-christianity/hardcover/product-1v99rz5z.html?q=jews">
+     Jews, Gentiles, and Christianity
+    </a>
+   </h3>
+   <p class="ProductContributors_author__odis_">
+    By
+    <a data-testid="product-author" href="/search?contributor=Dan+Blackwelder">
+     Dan Blackwelder
+    </a>
+   </p>
+   <p class="ProductItem_productItem__published__MssvR">
+    Published Apr 29, 2012
+   </p>
+   <div class="ProductItem_productItem__price__2cI_V">
+    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
+     <i aria-label="formats-book" class="icon-formats-book" role="img">
+     </i>
+     Hardcover
+    </p>
+    <span data-testid="product-price">
+     19.99 USD
+    </span>
+   </div>
+  </div>
+ </div>
+ <div class="grid-12 ProductItem_productItem____ATu">
+  <div class="col-4 col-l-6 col-m-4">
+   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/lsoe-publications/war-of-the-jews/ebook/product-1z8g5qw8.html?q=jews">
+    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
+     <img alt="War of the Jews" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/z/1z8g5qw8-ebook-shortedge-384.jpg"/>
+    </div>
+   </div>
+  </div>
+  <div class="col-8 col-l-6 col-m-8">
+   <h3>
+    <a data-testid="product-title" href="/shop/lsoe-publications/war-of-the-jews/ebook/product-1z8g5qw8.html?q=jews">
+     War of the Jews
+    </a>
+   </h3>
+   <p class="ProductContributors_author__odis_">
+    By
+    <a data-testid="product-author" href="/search?contributor=LSOE+Publications">
+     LSOE Publications
+    </a>
+   </p>
+   <p class="ProductItem_productItem__published__MssvR">
+    Published Sep 29, 2011
+   </p>
+   <div class="ProductItem_productItem__price__2cI_V">
+    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
+     <i aria-label="formats-ebook" class="icon-formats-ebook" role="img">
+     </i>
+     Ebook
+    </p>
+    <span data-testid="product-price">
+     3.99 USD
+    </span>
+   </div>
+  </div>
+ </div>
+ <div class="grid-12 ProductItem_productItem____ATu">
+  <div class="col-4 col-l-6 col-m-4">
+   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/jay-mazo/legends-of-the-jews/hardcover/product-1q2w5z4p.html?q=jews">
+    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__printedBook__7nUrI ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
+     <img alt="LEGENDS OF THE JEWS" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/q/1q2w5z4p-front-shortedge-384.jpg"/>
+    </div>
+   </div>
+  </div>
+  <div class="col-8 col-l-6 col-m-8">
+   <h3>
+    <a data-testid="product-title" href="/shop/jay-mazo/legends-of-the-jews/hardcover/product-1q2w5z4p.html?q=jews">
+     LEGENDS OF THE JEWS
+    </a>
+   </h3>
+   <p class="ProductContributors_author__odis_">
+    By
+    <a data-testid="product-author" href="/search?contributor=Jay+Mazo">
+     Jay Mazo
+    </a>
+   </p>
+   <p class="ProductItem_productItem__published__MssvR">
+    Published Jan 9, 2018
+   </p>
+   <div class="ProductItem_productItem__price__2cI_V">
+    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
+     <i aria-label="formats-book" class="icon-formats-book" role="img">
+     </i>
+     Hardcover
+    </p>
+    <span data-testid="product-price">
+     39.65 USD
+    </span>
+   </div>
+  </div>
+ </div>
+ <div class="grid-12 ProductItem_productItem____ATu">
+  <div class="col-4 col-l-6 col-m-4">
+   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/lsoe-publications/antiquities-of-the-jews/ebook/product-1j9red7k.html?q=jews">
+    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
+     <img alt="Antiquities of the Jews" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/j/1j9red7k-ebook-shortedge-384.jpg"/>
+    </div>
+   </div>
+  </div>
+  <div class="col-8 col-l-6 col-m-8">
+   <h3>
+    <a data-testid="product-title" href="/shop/lsoe-publications/antiquities-of-the-jews/ebook/product-1j9red7k.html?q=jews">
+     Antiquities of the Jews
+    </a>
+   </h3>
+   <p class="ProductContributors_author__odis_">
+    By
+    <a data-testid="product-author" href="/search?contributor=LSOE+Publications">
+     LSOE Publications
+    </a>
+   </p>
+   <div class="ProductItem_productItem__rating__8v_Xa">
+    <div class="StarRating-module_starRating__JfjDb">
+     <div class="StarRating-module_starsDisabled__fYwnQ StarRating-module_stars__zOzWm">
+      <i aria-label="Choose 1 stars" class="icon-shop-rating-filled-medium StarRating-module_checked__WgLKY" role="button">
+      </i>
+      <i aria-label="Choose 2 stars" class="icon-shop-rating-filled-medium StarRating-module_checked__WgLKY" role="button">
+      </i>
+      <i aria-label="Choose 3 stars" class="icon-shop-rating-filled-medium StarRating-module_checked__WgLKY" role="button">
+      </i>
+      <i aria-label="Choose 4 stars" class="icon-shop-rating-filled-medium StarRating-module_checked__WgLKY" role="button">
+      </i>
+      <i aria-label="Choose 5 stars" class="icon-shop-rating-filled-medium StarRating-module_checked__WgLKY" role="button">
+      </i>
+     </div>
+    </div>
+    <span class="ProductItem_productItem__rating__count__0V7io">
+     1 rating
+    </span>
+   </div>
+   <p class="ProductItem_productItem__published__MssvR">
+    Published Sep 29, 2011
+   </p>
+   <div class="ProductItem_productItem__price__2cI_V">
+    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
+     <i aria-label="formats-ebook" class="icon-formats-ebook" role="img">
+     </i>
+     Ebook
+    </p>
+    <span data-testid="product-price">
+     5.99 USD
+    </span>
+   </div>
+  </div>
+ </div>
+ <div class="grid-12 ProductItem_productItem____ATu">
+  <div class="col-4 col-l-6 col-m-4">
+   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/none-josephus/antiquities-of-the-jews/hardcover/product-1kv967r.html?q=jews">
+    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__printedBook__7nUrI ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
+     <img alt="Antiquities of the Jews" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/k/1kv967r-front-shortedge-384.jpg"/>
+    </div>
+   </div>
+  </div>
+  <div class="col-8 col-l-6 col-m-8">
+   <h3>
+    <a data-testid="product-title" href="/shop/none-josephus/antiquities-of-the-jews/hardcover/product-1kv967r.html?q=jews">
+     Antiquities of the Jews
+    </a>
+   </h3>
+   <p class="ProductContributors_author__odis_">
+    By
+    <a data-testid="product-author" href="/search?contributor=Josephus">
+     Josephus
+    </a>
+   </p>
+   <p class="ProductItem_productItem__published__MssvR">
+    Published Feb 5, 2006
+   </p>
+   <div class="ProductItem_productItem__price__2cI_V">
+    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
+     <i aria-label="formats-book" class="icon-formats-book" role="img">
+     </i>
+     Hardcover
+    </p>
+    <span data-testid="product-price">
+     42.91 USD
+    </span>
+   </div>
+  </div>
+ </div>
+ <div class="grid-12 ProductItem_productItem____ATu">
+  <div class="col-4 col-l-6 col-m-4">
+   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/joseph-franklin-rutherford/comfort-for-the-jews/hardcover/product-1567kyey.html?q=jews">
+    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__printedBook__7nUrI ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
+     <img alt="COMFORT FOR THE JEWS" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/5/1567kyey-front-shortedge-384.jpg"/>
+    </div>
+   </div>
+  </div>
+  <div class="col-8 col-l-6 col-m-8">
+   <h3>
+    <a data-testid="product-title" href="/shop/joseph-franklin-rutherford/comfort-for-the-jews/hardcover/product-1567kyey.html?q=jews">
+     COMFORT FOR THE JEWS
+    </a>
+   </h3>
+   <p class="ProductContributors_author__odis_">
+    By
+    <a data-testid="product-author" href="/search?contributor=Joseph+Franklin+Rutherford">
+     Joseph Franklin Rutherford
+    </a>
+   </p>
+   <p class="ProductItem_productItem__published__MssvR">
+    Published Feb 24, 2020
+   </p>
+   <div class="ProductItem_productItem__price__2cI_V">
+    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
+     <i aria-label="formats-book" class="icon-formats-book" role="img">
+     </i>
+     Hardcover
+    </p>
+    <span data-testid="product-price">
+     25.12 USD
+    </span>
+   </div>
+  </div>
+ </div>
+ <div class="grid-12 ProductItem_productItem____ATu">
+  <div class="col-4 col-l-6 col-m-4">
+   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/henry-milman-/history-of-the-jews/ebook/product-1k9dvy86.html?q=jews">
+    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
+     <img alt="History of the Jews" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/k/1k9dvy86-ebook-shortedge-384.jpg"/>
+    </div>
+   </div>
+  </div>
+  <div class="col-8 col-l-6 col-m-8">
+   <h3>
+    <a data-testid="product-title" href="/shop/henry-milman-/history-of-the-jews/ebook/product-1k9dvy86.html?q=jews">
+     History of the Jews
+    </a>
+   </h3>
+   <p class="ProductContributors_author__odis_">
+    By
+    <a data-testid="product-author" href="/search?contributor=HENRY+MILMAN">
+     HENRY MILMAN
+    </a>
+   </p>
+   <p class="ProductItem_productItem__published__MssvR">
+    Published May 1, 2013
+   </p>
+   <div class="ProductItem_productItem__price__2cI_V">
+    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
+     <i aria-label="formats-ebook" class="icon-formats-ebook" role="img">
+     </i>
+     Ebook
+    </p>
+    <span data-testid="product-price">
+     2.99 USD
+    </span>
+   </div>
+  </div>
+ </div>
+ <div class="grid-12 ProductItem_productItem____ATu">
+  <div class="col-4 col-l-6 col-m-4">
+   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/lsoe-publications/war-of-the-jews/paperback/product-15q6p96.html?q=jews">
+    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__printedBook__7nUrI ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
+     <img alt="War of the Jews" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/5/15q6p96-front-shortedge-384.jpg"/>
+    </div>
+   </div>
+  </div>
+  <div class="col-8 col-l-6 col-m-8">
+   <h3>
+    <a data-testid="product-title" href="/shop/lsoe-publications/war-of-the-jews/paperback/product-15q6p96.html?q=jews">
+     War of the Jews
+    </a>
+   </h3>
+   <p class="ProductContributors_author__odis_">
+    By
+    <a data-testid="product-author" href="/search?contributor=LSOE+Publications">
+     LSOE Publications
+    </a>
+   </p>
+   <p class="ProductItem_productItem__published__MssvR">
+    Published Apr 19, 2008
+   </p>
+   <div class="ProductItem_productItem__price__2cI_V">
+    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
+     <i aria-label="formats-book" class="icon-formats-book" role="img">
+     </i>
+     Paperback
+    </p>
+    <span data-testid="product-price">
+     19.38 USD
+    </span>
+   </div>
+  </div>
+ </div>
+</div>
