@@ -90,6 +90,41 @@
  </div>
  <div class="grid-12 ProductItem_productItem____ATu">
   <div class="col-4 col-l-6 col-m-4">
+   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/none-josephus/antiquities-of-the-jews/hardcover/product-1kv967r.html?q=jews">
+    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__printedBook__7nUrI ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
+     <img alt="Antiquities of the Jews" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/k/1kv967r-front-shortedge-384.jpg"/>
+    </div>
+   </div>
+  </div>
+  <div class="col-8 col-l-6 col-m-8">
+   <h3>
+    <a data-testid="product-title" href="/shop/none-josephus/antiquities-of-the-jews/hardcover/product-1kv967r.html?q=jews">
+     Antiquities of the Jews
+    </a>
+   </h3>
+   <p class="ProductContributors_author__odis_">
+    By
+    <a data-testid="product-author" href="/search?contributor=Josephus">
+     Josephus
+    </a>
+   </p>
+   <p class="ProductItem_productItem__published__MssvR">
+    Published Feb 5, 2006
+   </p>
+   <div class="ProductItem_productItem__price__2cI_V">
+    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
+     <i aria-label="formats-book" class="icon-formats-book" role="img">
+     </i>
+     Hardcover
+    </p>
+    <span data-testid="product-price">
+     42.91 USD
+    </span>
+   </div>
+  </div>
+ </div>
+ <div class="grid-12 ProductItem_productItem____ATu">
+  <div class="col-4 col-l-6 col-m-4">
    <div class="ProductItem_productItem__cover__0p_rT" href="/shop/dan-blackwelder/jews-gentiles-and-christianity/hardcover/product-1v99rz5z.html?q=jews">
     <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__printedBook__7nUrI ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
      <img alt="Jews, Gentiles, and Christianity" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/v/1v99rz5z-front-shortedge-384.jpg"/>
@@ -243,41 +278,6 @@
     </p>
     <span data-testid="product-price">
      5.99 USD
-    </span>
-   </div>
-  </div>
- </div>
- <div class="grid-12 ProductItem_productItem____ATu">
-  <div class="col-4 col-l-6 col-m-4">
-   <div class="ProductItem_productItem__cover__0p_rT" href="/shop/none-josephus/antiquities-of-the-jews/hardcover/product-1kv967r.html?q=jews">
-    <div class="ProductThumbnail_productThumbnailContainer__DOrAw ProductThumbnail_productThumbnailContainer__printedBook__7nUrI ProductThumbnail_productThumbnailContainer__clickable__G1aiW" data-testid="product-cover">
-     <img alt="Antiquities of the Jews" class="ProductThumbnail_coverImage__jYyHX" src="https://assets.lulu.com/cover_thumbs/1/k/1kv967r-front-shortedge-384.jpg"/>
-    </div>
-   </div>
-  </div>
-  <div class="col-8 col-l-6 col-m-8">
-   <h3>
-    <a data-testid="product-title" href="/shop/none-josephus/antiquities-of-the-jews/hardcover/product-1kv967r.html?q=jews">
-     Antiquities of the Jews
-    </a>
-   </h3>
-   <p class="ProductContributors_author__odis_">
-    By
-    <a data-testid="product-author" href="/search?contributor=Josephus">
-     Josephus
-    </a>
-   </p>
-   <p class="ProductItem_productItem__published__MssvR">
-    Published Feb 5, 2006
-   </p>
-   <div class="ProductItem_productItem__price__2cI_V">
-    <p class="ProductItem_productItem__price__type__SCkSD" data-testid="product-type">
-     <i aria-label="formats-book" class="icon-formats-book" role="img">
-     </i>
-     Hardcover
-    </p>
-    <span data-testid="product-price">
-     42.91 USD
     </span>
    </div>
   </div>
