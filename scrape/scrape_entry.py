@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 import os
+from unidecode import unidecode
 
 # TODO: There could be some specs left: Error handling should be better
 
@@ -123,7 +124,7 @@ def scrape_url(url, filename):
     else:
         with open(csv_name, 'a', encoding="utf-8") as f:
             csv_obj = csv.DictWriter(f, fieldnames=Column_names)
-            csv_obj.writerow(output)
+            csv_obj.writerow(unidecode(output))
 
     # CSV existing file adder
     # csv_name = "Placeholder"
