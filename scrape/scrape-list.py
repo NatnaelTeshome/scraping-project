@@ -1,16 +1,8 @@
 from selenium import webdriver
 # from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
 from bs4 import BeautifulSoup
 import os
 import math
-from selenium.webdriver.support.wait import WebDriverWait
-
-
-
-
 
 
 from selenium.webdriver.common.by import By
@@ -41,32 +33,6 @@ def page_scraper(page):
     # element = wait.until(lambda x: x.find_element(By.CLASS_NAME, "col-7 col-l-9 col-start-l-1 col-start-2"))
     # print(element)
     # Parse processed webpage with BeautifulSoup
-    soup = BeautifulSoup(driver.page_source, features="html5lib")
-    #print(soup.prettify())
-    # with open("output.txt", "w") as file:
-    #     file.write(soup.prettify())
-
-    # Step 1b: Extracting the data
-    body = soup.find("body")
-    div_1 = body.find("div", id="__next")
-    #print(div_1.prettify())
-    div_2 = div_1.find("div")
-    #print(div_2.prettify())
-    # with open("output.txt", "w") as file:
-    #     file.write(div_2.prettify())
-        
-    main_tag = div_2.find("main", class_ = "fill-vertical-space")
-    #print(main)
-    # with open("output.txt", "w") as file:
-    #     file.write(main.prettify())
-    div_3 = main_tag.find("div", class_="grid-12 Search_productsPage__e_PFE")
-    #print(div_3.prettify())
-    # with open("output.txt", "w") as file:
-    #     file.write(div_3.prettify())
-
-    return div_3
-
-def document_initialized_2(driver):
     soup = BeautifulSoup(driver.page_source, features="html5lib")
     #print(soup.prettify())
     # with open("output.txt", "w") as file:
@@ -110,17 +76,17 @@ def document_initialized_2(driver):
 
 
 # Step 1a: Load the webpage to get the number of pages
+driver.get("https://www.lulu.com/search?page=1&q=jews&pageSize=10&adult_audience_rating=00")
 
 # Wait for an element to be visible for a maximum of 10 seconds
 # wait = WebDriverWait(driver, 5)
 # element = wait.until(lambda x: x.find_element(By.CLASS_NAME, "SortBar_sortBar__info__Njt_r"))
 
 # Parse processed webpage with BeautifulSoup
-print(u.page_source)
-soup = BeautifulSoup(u.page_source)
-# #print(soup.prettify())
-# # with open("output.txt", "w") as file:
-# #     file.write(soup.prettify())
+soup = BeautifulSoup(driver.page_source, features="html5lib")
+#print(soup.prettify())
+# with open("output.txt", "w") as file:
+#     file.write(soup.prettify())
 
 # Step 1b: Extracting the data
 #body = soup.find("body")
@@ -131,18 +97,17 @@ div_2 = div_1.find("div")
 # with open("output.txt", "w") as file:
 #     file.write(div_2.prettify())
     
-# main_tag = div_2.find("main", class_ = "fill-vertical-space")
-# #print(main)
-# # with open("output.txt", "w") as file:
-# #     file.write(main.prettify())
-# div_3 = main_tag.find("div", class_="grid-12 Search_productsPage__e_PFE")
-# #print(div_3.prettify())
-# # with open("output.txt", "w") as file:
-# #     file.write(div_3.prettify())
-# div_4 = div_3.find("div", class_="col-9 grid-9 col-m-big-12")
+main = div_2.find("main")
+#print(main)
+# with open("output.txt", "w") as file:
+#     file.write(main.prettify())
+div_3 = main.find("div")
+#print(div_3.prettify())
+# with open("output.txt", "w") as file:
+#     file.write(div_3.prettify())
+div_4 = div_3.find("div", class_="col-9 grid-9 col-m-big-12")
 
 # Find the number of pages
-div_4 = soup.find("div", class_="col-9 grid-9 col-m-big-12")
 number = div_4.find("div", class_="SortBar_sortBar__info__Njt_r")
 ind_of = number.text.index("of") + 3
 rest = number.text[ind_of:]
