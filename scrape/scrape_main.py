@@ -6,7 +6,6 @@ from scrape_entry import scrape_url
 
 all_links = scrape_search_term("jews")
 
-print(all_links)
 for link in all_links:
     scrape_url(link, "jews")
 

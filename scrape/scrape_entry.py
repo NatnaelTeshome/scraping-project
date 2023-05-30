@@ -14,8 +14,6 @@ def scrape_url(url, filename):
 
     soup = BeautifulSoup(html, "html.parser")
 
-    #print(soup.prettify())
-
     output = {}
 
     body = soup.find("body")
@@ -56,9 +54,6 @@ def scrape_url(url, filename):
     items_1 = dl_details.find_all("dt")
     descriptions_details = dl_details.find_all("dd")
 
-    print(items_1)
-    print(descriptions_details)
-    print(type(items_1[0]))
 
     # Missing fields
     if len(items_1) != 6:
