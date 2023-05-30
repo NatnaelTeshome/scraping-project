@@ -44,7 +44,7 @@ def scrape_search_term(term):
 
     # Instantiate options
     opts = Options()
-    opts.headless = True
+    #opts.headless = True
 
     # Instantiate a webdriver
     driver = webdriver.Chrome(options=opts)
