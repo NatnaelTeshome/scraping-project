@@ -22,7 +22,7 @@ def scrape_search_term(term):
         div_3 = main.find("div", class_="grid-12 Search_productsPage__e_PFE")
         if not div_3:
             print("reached")
-            time.sleep(5)
+            time.sleep(10)
             return page_scraper(page)
         div_4 = div_3.find("div", class_="col-9 grid-9 col-m-big-12")
         div_5 = div_4.find("div", class_="col-7 col-l-9 col-start-l-1 col-start-2")

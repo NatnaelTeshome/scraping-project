@@ -19,13 +19,41 @@ def scrape_url(url, filename):
 
     body = soup.find("body")
     div_1 = body.find("div")
+    if not div_1:
+        # For error handling
+        print(url)
+        return 
     div_2 = div_1.find("div")
+    if not div_2:
+        # For error handling
+        print(url)
+        return 
     main = div_2.find("main")
+    if not main:
+        # For error handling
+        print(url)
+        return 
     div_3 = main.find("div")
-    div_4 = div_3.find("div")
+    if not div_3:
+        # For error handling
+        print(url)
+        return
+    div_4 = div_3.find("div", class_="max-width-container")
+    if not div_4:
+        # For error handling
+        print(url)
+        return
     div_top = div_4.find("div", class_="IntroSection_productPage__intro__aKaZG")
+    if not div_top:
+        # For error handling
+        print(url)
+        return
     title_div = div_top.find("div", class_="IntroSection_productPage__intro__details__T4oLR")
-    title = title_div.find("h1").text
+    if not title_div:
+        # For error handling
+        print(url)
+        return
+    title = title_div.find("h1").text 
     output["Title"] = title
 
     author_p = div_top.find("p", class_="IntroSection_productAuthor__NtGFh")
@@ -72,8 +100,8 @@ def scrape_url(url, filename):
                 descriptions_details.append(description_soup)
 
     for i in range(len(items_1)):
-        item = items_1[i].text.strip()
-        description = descriptions_details[i].text.strip()
+        item = unidecode(items_1[i].text.strip())
+        description = unidecode(descriptions_details[i].text.strip())
         if item == "Publication Date":
             description = description[-4:]
             output["Publication Year"] = description
@@ -89,8 +117,8 @@ def scrape_url(url, filename):
     descriptions_specs = dl_specs.find_all("dd")
 
     for i in range(len(items_2)):
-        item = items_2[i].text.strip()
-        description = descriptions_specs[i].text.strip()
+        item = unidecode(items_2[i].text.strip())
+        description = unidecode(descriptions_specs[i].text.strip())
         output[item] = description
 
 
@@ -99,7 +127,7 @@ def scrape_url(url, filename):
     keywords_list = div_keyword_inner.find_all("span")
     clean_keywords = []
     for keyword in keywords_list:
-        clean_keywords.append(keyword.text.strip())
+        clean_keywords.append(unidecode(keyword.text.strip()))
 
     output["Keywords"] = clean_keywords
 
@@ -124,7 +152,7 @@ def scrape_url(url, filename):
     else:
         with open(csv_name, 'a', encoding="utf-8") as f:
             csv_obj = csv.DictWriter(f, fieldnames=Column_names)
-            csv_obj.writerow(unidecode(output))
+            csv_obj.writerow(output)
 
     # CSV existing file adder
     # csv_name = "Placeholder"
