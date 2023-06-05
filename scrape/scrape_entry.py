@@ -69,7 +69,7 @@ def scrape_url(url, filename):
 
     # Price
     price = type_price_div.find("p", class_="BookFormatSelectionButton-module_bookFormatPriceCurrent__GePTd BookFormatSelectionButton-module_bookFormatPrice__cxEWw").text
-    output["Price"] = price
+    output["Price"] = price[4: ]
 
     div_bottom = div_4.find("div", class_="grid-12")
     summary = div_bottom.find("div", class_="col-8 col-m-big-12 col-start-m-big-1 col-start-3 ProductDescriptionSection_descriptionContainer__iFXYA").text
@@ -134,8 +134,8 @@ def scrape_url(url, filename):
 
 
     # File system
-    Column_names = ["Title", "Author", "Type", "Price", "Summary", "Publication Year", "Language", "ISBN", "Category", "Copyright", "Contributors",
-    "Pages", "Binding", "Interior Color", "Dimensions", "Format", "Keywords", "URL"]
+    Column_names = ["URL", "Title", "Author", "Type", "Price", "Summary", "Publication Year", "Language", "ISBN", "Category", "Copyright", "Contributors",
+    "Pages", "Binding", "Interior Color", "Dimensions", "Format", "Keywords"]
 
     # Helper function to check if a similar book exists
     # TODO

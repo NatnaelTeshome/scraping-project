@@ -6,7 +6,7 @@ import pandas as pd
 
 # # TODO: Handle the multiple words search term
 
-search_term = "louis ginzberg" 
+search_term = "Harvard University" 
 
 search_term = search_term.replace(" ", "+")
 
