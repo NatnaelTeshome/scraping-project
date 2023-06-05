@@ -130,12 +130,12 @@ def scrape_url(url, filename):
         clean_keywords.append(unidecode(keyword.text.strip()))
 
     output["Keywords"] = clean_keywords
-
+    output["URL"] = url
 
 
     # File system
     Column_names = ["Title", "Author", "Type", "Price", "Summary", "Publication Year", "Language", "ISBN", "Category", "Copyright", "Contributors",
-    "Pages", "Binding", "Interior Color", "Dimensions", "Format", "Keywords"]
+    "Pages", "Binding", "Interior Color", "Dimensions", "Format", "Keywords", "URL"]
 
     # Helper function to check if a similar book exists
     # TODO
