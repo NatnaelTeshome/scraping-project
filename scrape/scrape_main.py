@@ -4,24 +4,16 @@ import os
 import pandas as pd
 
 
-# # TODO: Handle the multiple words search term
-
 search_term = "Harvard University" 
 
 search_term = search_term.replace(" ", "+")
 
+# Get all book UERLs
 all_links = scrape_search_term(search_term)
 
-for link in all_links:
-    scrape_url(link, search_term)
-
-# scrape_url("https://www.lulu.com/shop/apostle-arne-horn/the-book-of-enoch/paperback/product-1mwr4gdv.html?q=jews", "outlier3")
-
-
-# Read a file and store ISBN or URL. Check if ISBN already exists. If it does, check URL. If not, add that book
-
-# Check if file exists in the operating system
+# Check if file already exists in the operating system
 file_name = search_term + ".csv"
+
 if os.path.isfile(file_name):
     df = pd.read_csv(file_name)
     ISBN_col = df["ISBN"]
@@ -29,4 +21,10 @@ if os.path.isfile(file_name):
     URL_col = df["URL"]
     URL_set = set(URL_col)
 
+    for link in all_links:
+        scrape_url(link, search_term, True, ISBN_set, URL_set)
+
+else:
+    for link in all_links:
+        scrape_url(link, search_term, False)
 # Open file

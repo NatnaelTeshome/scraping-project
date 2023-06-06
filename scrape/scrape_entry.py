@@ -7,7 +7,7 @@ from unidecode import unidecode
 # TODO: There could be some specs left: Error handling should be better
 
 
-def scrape_url(url, filename):
+def scrape_url(url, filename, exists, ISBN_set=None, URL_set=None):
 
 
     response = requests.get(url)
@@ -143,13 +143,21 @@ def scrape_url(url, filename):
     # CSV new file writer
     csv_name = "{}.csv".format(filename)
     # if file doesn't exist, create it and write the header
-    if not os.path.isfile(csv_name):
-        with open(csv_name, 'w', encoding="utf-8", newline='') as f:
-            csv_obj = csv.DictWriter(f, fieldnames=Column_names)
-            csv_obj.writeheader()
-            csv_obj.writerow(output)
-    # if file exists, append the new entry
+    if not exists:
+        if not os.path.isfile(csv_name):
+            with open(csv_name, 'w', encoding="utf-8", newline='') as f:
+                csv_obj = csv.DictWriter(f, fieldnames=Column_names)
+                csv_obj.writeheader()
+                csv_obj.writerow(output)
+        # if file exists, append the new entry
+        else:
+            with open(csv_name, 'a', encoding="utf-8", newline='') as f:
+                csv_obj = csv.DictWriter(f, fieldnames=Column_names)
+                csv_obj.writerow(output)
     else:
+        if url in URL_set or output["ISBN"] in ISBN_set:
+            return
+        print(url)
         with open(csv_name, 'a', encoding="utf-8", newline='') as f:
             csv_obj = csv.DictWriter(f, fieldnames=Column_names)
             csv_obj.writerow(output)
