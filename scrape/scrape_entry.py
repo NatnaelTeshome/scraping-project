@@ -149,11 +149,13 @@ def scrape_url(url, filename, exists, ISBN_set=None, URL_set=None):
                 csv_obj = csv.DictWriter(f, fieldnames=Column_names)
                 csv_obj.writeheader()
                 csv_obj.writerow(output)
+            f.close()
         # if file exists, append the new entry
         else:
             with open(csv_name, 'a', encoding="utf-8", newline='') as f:
                 csv_obj = csv.DictWriter(f, fieldnames=Column_names)
                 csv_obj.writerow(output)
+            f.close()
     else:
         if url in URL_set or output["ISBN"] in ISBN_set:
             return
@@ -161,6 +163,7 @@ def scrape_url(url, filename, exists, ISBN_set=None, URL_set=None):
         with open(csv_name, 'a', encoding="utf-8", newline='') as f:
             csv_obj = csv.DictWriter(f, fieldnames=Column_names)
             csv_obj.writerow(output)
+        f.close()
 
     # CSV existing file adder
     # csv_name = "Placeholder"
