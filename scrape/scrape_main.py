@@ -4,7 +4,7 @@ import os
 import pandas as pd
 
 
-search_term = "Harvard University" 
+search_term = "Walder" 
 
 search_term = search_term.replace(" ", "+")
 

@@ -3,6 +3,7 @@ import requests
 import csv
 import os
 from unidecode import unidecode
+from datetime import date
 
 # TODO: There could be some specs left: Error handling should be better
 
@@ -131,10 +132,10 @@ def scrape_url(url, filename, exists, ISBN_set=None, URL_set=None):
 
     output["Keywords"] = clean_keywords
     output["URL"] = url
-
+    output["Date"] = date.today()
 
     # File system
-    Column_names = ["URL", "Title", "Author", "Type", "Price", "Summary", "Publication Year", "Language", "ISBN", "Category", "Copyright", "Contributors",
+    Column_names = ["URL", "Date", "Title", "Author", "Type", "Price", "Summary", "Publication Year", "Language", "ISBN", "Category", "Copyright", "Contributors",
     "Pages", "Binding", "Interior Color", "Dimensions", "Format", "Keywords"]
 
     # Helper function to check if a similar book exists
