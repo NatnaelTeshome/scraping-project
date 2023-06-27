@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block title %}  Create New File {% endblock %}
+
+{% block content %}
+  <h1>Create New File</h1>
+  <form action="{{ url_for('create') }}" method="post">
+    <input type="text" name="search_term" placeholder="Enter a search word">
+    <input type="text" name="file_name" placeholder="Enter a file name">
+    <button type="submit">Continue</button>
+  </form>
+{% endblock %}

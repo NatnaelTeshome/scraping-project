@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %} Add to File {% endblock %}
+{% block content %}
+<h1>Add to File</h1>
+<form method="post" enctype="multipart/form-data">
+  <input type = "text" name="search_term" placeholder="Enter a search word">
+  <input type="file" name="file">
+  <button type="submit">Upload</button>
+</form>
+{% endblock %}
