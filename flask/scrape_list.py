@@ -1,14 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
-import os
 import math
 import time
 
 
 # Create a new instance of the WebDriver
 
-def scrape_search_term(term):
+def scrape_search_term(term, times):
     def page_scraper(page):
         # Load the HTML page
         driver.get(page)
@@ -35,10 +34,6 @@ def scrape_search_term(term):
 
         return links
 
-     # Delete the links.txt file if it exists
-    if os.path.exists("links.txt"):
-        os.remove("links.txt")
-
 
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--no-sandbox")
@@ -48,7 +43,7 @@ def scrape_search_term(term):
     driver = webdriver.Chrome(options=chrome_options)
     
     # Step 1a: Load the webpage to get the number of pages
-    driver.get("https://www.lulu.com/search?page=1&q={}&pageSize=10&adult_audience_rating=00".format(term))
+    driver.get("https://www.lulu.com/search?page=1&q={}&pageSize=10&adult_audience_rating".format(term))
 
 
     # Parse processed webpage with BeautifulSoup
@@ -61,8 +56,12 @@ def scrape_search_term(term):
     div_3 = main.find("div")
     div_4 = div_3.find("div", class_="col-9 grid-9 col-m-big-12")
     if not div_4:   
-        return scrape_search_term(term)
+        if times == 10:
+            return []
+        time.sleep(2) 
+        return scrape_search_term(term, times + 1)
     # Find the number of pages
+    print("reached outside if from the empty search")
     number = div_4.find("div", class_="SortBar_sortBar__info__Njt_r")
     ind_of = number.text.index("of") + 3
     rest = number.text[ind_of:]
@@ -77,7 +76,7 @@ def scrape_search_term(term):
     # Iterate over every page
     for i in range(1, num_pages + 1):
         # Load the HTML page
-        page = "https://www.lulu.com/search?page=" + str(i) + "&q={}&pageSize=500&adult_audience_rating=00".format(term)
+        page = "https://www.lulu.com/search?page=" + str(i) + "&q={}&pageSize=500&adult_audience_rating".format(term)
         links = page_scraper(page)
         for link in links:
             all_links.append(link)

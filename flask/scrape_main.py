@@ -6,8 +6,10 @@ def search(search_term, upload_file):
     search_term = search_term.replace(" ", "+")
 
     # Get all book UERLs
-    all_links = scrape_search_term(search_term)
+    all_links = scrape_search_term(search_term, 0)
 
+    if not all_links:
+        return
     # TODO: Do some error handling for non-CSV files
     df = pd.read_csv(upload_file)
     ISBN_col = df["ISBN"]

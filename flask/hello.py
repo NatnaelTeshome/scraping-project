@@ -36,7 +36,7 @@ def create():
             return redirect(request.url)
         file_name = secure_filename(file_name)
         current_datetime = datetime.datetime.now()
-        formatted_datetime = current_datetime.strftime("%Y_%m_%d_%H_%M")
+        formatted_datetime = current_datetime.strftime("%Y_%m_%d_%H_%M_%S")
         file_name = "{}_{}".format(file_name, formatted_datetime)
         file_name = "{}.csv".format(file_name)
 
