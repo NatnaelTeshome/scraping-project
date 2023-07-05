@@ -18,4 +18,4 @@ def search(search_term, upload_file):
     URL_set = set(URL_col)
 
     for link in all_links:
-        scrape_url(link, upload_file, ISBN_set, URL_set)
+        scrape_url(link, upload_file, search_term, ISBN_set, URL_set)

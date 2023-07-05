@@ -20,7 +20,6 @@ def scrape_search_term(term, times):
         main = div_2.find("main")
         div_3 = main.find("div", class_="grid-12 Search_productsPage__e_PFE")
         if not div_3:
-            print("reached")
             time.sleep(10)
             return page_scraper(page)
         div_4 = div_3.find("div", class_="col-9 grid-9 col-m-big-12")
@@ -61,14 +60,12 @@ def scrape_search_term(term, times):
         time.sleep(2) 
         return scrape_search_term(term, times + 1)
     # Find the number of pages
-    print("reached outside if from the empty search")
     number = div_4.find("div", class_="SortBar_sortBar__info__Njt_r")
     ind_of = number.text.index("of") + 3
     rest = number.text[ind_of:]
     ind_space = rest.index(" ")
     num_books = int(rest[:ind_space])
     num_pages = math.ceil(num_books / 500)
-    print(num_pages)
 
     # TODO: Area of improvement by increasing the number of books per page
 
