@@ -7,7 +7,7 @@ from datetime import date
 # TODO: There could be some specs left: Error handling should be better
 
 
-def scrape_url(url, upload_file, ISBN_set=None, URL_set=None):
+def scrape_url(url, upload_file, search_term, ISBN_set=None, URL_set=None):
 
 
     response = requests.get(url)
@@ -133,8 +133,12 @@ def scrape_url(url, upload_file, ISBN_set=None, URL_set=None):
     output["URL"] = url
     output["Date"] = date.today()
 
+#    search_term = search_term.lower()
+#    if not search_term in output["Title"].lower() and not search_term in output["Keywords"]:
+#        output["Remark"] = "Unverified"
+
     # File system
-    Column_names = ["URL", "Date", "Title", "Author", "Type", "Price", "Summary", "Publication Year", "Language", "ISBN", "Category", "Copyright", "Contributors",
+    Column_names = ["URL", "Date", "Remark", "Title", "Author", "Type", "Price", "Summary", "Publication Year", "Language", "ISBN", "Category", "Copyright", "Contributors",
     "Pages", "Binding", "Interior Color", "Dimensions", "Format", "Keywords"]
 
     # If file doesn't exist, create it and write the header

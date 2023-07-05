@@ -1,6 +1,6 @@
 import csv
 import os
-from flask import Flask, flash, request, redirect, url_for, send_from_directory, render_template
+from flask import Flask, request, redirect, url_for, send_from_directory, render_template
 from werkzeug.utils import secure_filename
 import datetime
 
@@ -30,25 +30,27 @@ def index():
 def create():
     if request.method == "POST":
         search_term = request.form['search_term']
-        file_name = request.form['file_name']
+        filename = request.form['file_name']
         # TODO: Do the error handling in the front end as well
-        if not search_term or not file_name:
+        if not search_term or not filename:
             return redirect(request.url)
-        file_name = secure_filename(file_name)
+        filename = secure_filename(filename)
         current_datetime = datetime.datetime.now()
         formatted_datetime = current_datetime.strftime("%Y_%m_%d_%H_%M_%S")
-        file_name = "{}_{}".format(file_name, formatted_datetime)
-        file_name = "{}.csv".format(file_name)
+        filename = "{}_{}".format(filename, formatted_datetime)
+        filename = "{}.csv".format(filename)
 
     
-        full_file_name = "{}/{}".format(app.config["UPLOAD_FOLDER"], file_name)
-        column_names = ["URL", "Date", "Title", "Author", "Type", "Price", "Summary", "Publication Year", "Language", "ISBN", "Category", "Copyright", "Contributors",
+        full_filename = "{}/{}".format(app.config["UPLOAD_FOLDER"], filename)
+        column_names = ["URL", "Date", "Remark", "Title", "Author", "Type", "Price", "Summary", "Publication Year", "Language", "ISBN", "Category", "Copyright", "Contributors",
         "Pages", "Binding", "Interior Color", "Dimensions", "Format", "Keywords"]
-        with open(full_file_name, 'w', encoding="utf-8", newline='') as f:
+        with open(full_filename, 'w', encoding="utf-8", newline='') as f:
             csv_obj = csv.DictWriter(f, fieldnames=column_names)
             csv_obj.writeheader()
-        search(search_term, full_file_name)
-        return redirect(url_for('download_file', name=file_name))
+        
+        search(search_term, full_filename)
+
+        return redirect(url_for('download_file', name=filename))
     
     return render_template('create.html')
 
@@ -56,7 +58,6 @@ def create():
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST':
-        print("reached if statement")
         # check if the post request has the file part
         if 'file' not in request.files:
             return redirect(request.url)
@@ -65,14 +66,16 @@ def upload():
         if not file.filename or not allowed_file(file.filename):
             return redirect(request.url)
         filename = secure_filename(file.filename)
+        filename = filename.split("_")
+        filename = "_".join(filename[:-6])
         current_datetime = datetime.datetime.now()
         formatted_datetime = current_datetime.strftime("%Y_%m_%d_%H_%M_%S")
         filename = "{}_{}".format(filename, formatted_datetime)
         filename = "{}.csv".format(filename)
         search_term = request.form['search_term']
-        full_file_name = app.config["UPLOAD_FOLDER"] + filename
-        file.save(full_file_name)
-        search(search_term, full_file_name)
+        full_filename = "{}/{}".format(app.config["UPLOAD_FOLDER"], filename)
+        file.save(full_filename)
+        search(search_term, full_filename)
         return redirect(url_for('download_file', name=filename))
     
     return render_template('upload.html')
