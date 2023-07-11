@@ -21,37 +21,30 @@ def scrape_url(url, upload_file, search_term, ISBN_set=None, URL_set=None):
     div_1 = body.find("div")
     if not div_1:
         # For error handling
-        print(url)
         return 
     div_2 = div_1.find("div")
     if not div_2:
         # For error handling
-        print(url)
         return 
     main = div_2.find("main")
     if not main:
         # For error handling
-        print(url)
         return 
     div_3 = main.find("div")
     if not div_3:
         # For error handling
-        print(url)
         return
     div_4 = div_3.find("div", class_="max-width-container")
     if not div_4:
         # For error handling
-        print(url)
         return
     div_top = div_4.find("div", class_="IntroSection_productPage__intro__aKaZG")
     if not div_top:
         # For error handling
-        print(url)
         return
     title_div = div_top.find("div", class_="IntroSection_productPage__intro__details__T4oLR")
     if not title_div:
         # For error handling
-        print(url)
         return
     title = title_div.find("h1").text 
     output["Title"] = title
@@ -133,9 +126,9 @@ def scrape_url(url, upload_file, search_term, ISBN_set=None, URL_set=None):
     output["URL"] = url
     output["Date"] = date.today()
 
-#    search_term = search_term.lower()
-#    if not search_term in output["Title"].lower() and not search_term in output["Keywords"]:
-#        output["Remark"] = "Unverified"
+    search_term = search_term.lower()
+    if not search_term in output["Title"].lower() and not search_term in output["Keywords"]:
+        output["Remark"] = "Unverified"
 
     # File system
     Column_names = ["URL", "Date", "Remark", "Title", "Author", "Type", "Price", "Summary", "Publication Year", "Language", "ISBN", "Category", "Copyright", "Contributors",

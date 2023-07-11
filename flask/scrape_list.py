@@ -5,8 +5,6 @@ import math
 import time
 
 
-# Create a new instance of the WebDriver
-
 def scrape_search_term(term, times):
     def page_scraper(page):
         # Load the HTML page
@@ -59,24 +57,24 @@ def scrape_search_term(term, times):
             return []
         time.sleep(2) 
         return scrape_search_term(term, times + 1)
+
     # Find the number of pages
     number = div_4.find("div", class_="SortBar_sortBar__info__Njt_r")
-    ind_of = number.text.index("of") + 3
-    rest = number.text[ind_of:]
-    ind_space = rest.index(" ")
-    num_books = int(rest[:ind_space])
-    num_pages = math.ceil(num_books / 500)
-
-    # TODO: Area of improvement by increasing the number of books per page
-
     all_links = []
-    # Iterate over every page
-    for i in range(1, num_pages + 1):
-        # Load the HTML page
-        page = "https://www.lulu.com/search?page=" + str(i) + "&q={}&pageSize=500&adult_audience_rating".format(term)
-        links = page_scraper(page)
-        for link in links:
-            all_links.append(link)
+    if number:
+        ind_of = number.text.index("of") + 3
+        rest = number.text[ind_of:]
+        ind_space = rest.index(" ")
+        num_books = int(rest[:ind_space])
+        num_pages = math.ceil(num_books / 500)
+
+        # Iterate over every page
+        for i in range(1, num_pages + 1):
+            # Load the HTML page
+            page = "https://www.lulu.com/search?page=" + str(i) + "&q={}&pageSize=500&adult_audience_rating".format(term)
+            links = page_scraper(page)
+            for link in links:
+                all_links.append(link)
     
     return all_links
 

@@ -3,9 +3,10 @@
 
 {% block content %}
   <h1>Create New File</h1>
-  <form action="{{ url_for('create') }}" method="post">
+  <form action="{{ url_for('create') }}" id="myForm" method="post">
     <input type="text" name="search_term" placeholder="Enter a search word">
     <input type="text" name="file_name" placeholder="Enter a file name">
-    <button type="submit">Continue</button>
+    <button type="submit" id="submitBtn" onClick="submitForm()">Continue</button>
+    <div id="loadingSpinner" style="display: none"></div>
   </form>
 {% endblock %}

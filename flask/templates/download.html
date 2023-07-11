@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %} Download File {% endblock %}
+{% block content %}
+
+{% if filename %}
+    <h2>Number of items: {{items_count}}</h2>
+    <h2>Time taken: {{time_diff}}</h2>
+    <h2>File name: {{filename}}</h2>
+
+    <form method="POST" action="/downloads/{{filename}}">
+        <button type="submit">Download</button>
+    </form>
+    
+{% else %}
+    <h1>Sorry. There is no file to download.</h1>
+{% endif %}
+
+{% endblock %}

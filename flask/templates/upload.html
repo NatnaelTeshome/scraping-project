@@ -2,9 +2,10 @@
 {% block title %} Add to File {% endblock %}
 {% block content %}
 <h1>Add to File</h1>
-<form method="post" enctype="multipart/form-data">
-  <input type = "text" name="search_term" placeholder="Enter a search word">
+<form method="post" id="myForm" enctype="multipart/form-data">
+  <input type="text" name="search_term" placeholder="Enter a search word">
   <input type="file" name="file">
-  <button type="submit">Upload</button>
+  <button type="submit" id="submitBtn" onClick="submitForm()">Upload</button>
+  <div id="loadingSpinner" style="display: none"></div>
 </form>
 {% endblock %}
